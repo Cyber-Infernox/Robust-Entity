@@ -1,0 +1,409 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(231, 237, 243);
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between ;
+    background-color: white;
+    padding: 6px 6%;
+    position: sticky;
+    top:0;
+    z-index:100;
+    box-shadow: 0 5px 10px rgb(231, 238, 245)
+
+}
+.icon img{
+    margin-right: 15px;
+    display:block;
+}
+.navcenter ul li{
+    display: inline-block;
+  list-style: none;
+
+}
+.navcenter ul li a{
+    display:flex;
+    align-items:center;
+    font-size:12px;
+    margin: 5px 8px;
+    padding-right:5px;
+    position:relative;
+}
+.navcenter ul li a::after{
+    content: '';
+    width:0;
+    height: 2px;
+    background-color: rgb(171, 177, 183);
+    position: absolute;
+    bottom:-15px;
+    transition: width 0.2s;
+}
+.navcenter ul li a:hover::after,
+ .navcenter ul li a.active-link::after{
+    width:100%;
+
+}
+.navright img{
+    width: 40px;
+    border-radius: 50%;
+    display:block;
+    cursor: pointer;
+    position: relative;
+}
+ .online{
+    position: relative;
+ }
+ .online::after{
+    content:'';
+    width:8px;
+    height:8px;
+    border:1px solid white;
+    border-radius: 50%;
+    right: 0px;
+    top:0px;
+    background: rgb(90, 213, 90);
+    position:absolute;
+ }
+.searchbox{
+    background-color: rgb(211, 220, 229);
+    width:250px;
+    border-radius: 40px;
+    display:flex;
+    align-items: center;
+    padding:0px 15px;
+    
+}
+.navleft{
+    display:flex;
+    align-items: center;
+}
+.searchbox img{
+    width:14px;
+}
+.searchbox input{
+    width:100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border:0;
+}
+/* ---------------------------------------------navbar ends------------------------------------------------------ */
+
+.container{
+    padding:20px 5%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.leftcontent{
+    flex-basis:25%;
+    align-self:flex-start;
+    
+}
+.rightcontent{
+    flex-basis:25%;
+    align-self:flex-start;
+
+}
+.maincontent{
+    flex-basis:46%;
+
+}
+.profilebox{
+    background-color: white;
+}
+.shortintro{
+    padding: 0 25px;
+}
+.shortintro img{
+    width: 90px;
+    border-radius: 50%;
+    background: white;
+    padding:4px;
+    margin-top:-45px;
+}
+.shortintro h1{
+    font-size: 20px;
+    font-weight:bold;
+    color:black;
+
+}
+.shortintro h3{
+    font-size: 15px;
+    font-weight: 500;
+    color:black;
+}
+.shortintro ul{
+    list-style: none;
+    margin:20px 0;
+
+}
+.shortintro ul li{
+    width:100%;
+    margin:5px 0;
+    font-size: 14px;
+}
+.shortintro ul li span{
+    float:right;
+    color:blue;
+}
+.profilelink{
+    display: flex;
+    align-items: center;
+
+}
+.profilelink a{
+    flex-basis: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 14px;
+    
+}
+.sidebar-activity{
+    background-color: white;
+    padding: 5px 25px;
+    margin: 12px 0;
+}
+.sidebar-activity h3{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 10;
+}
+.sidebar-activity a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin:3px 0;
+
+}
+/* ----------------------------------------------left sidebar ends--------------------------------------------- */
+.rightcontent{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.sidebarnews{
+    background: white;
+    padding: 10px 25px;
+
+}
+.info-icon{
+    width:15px;
+    float:right;
+    margin-top: 15px;
+}
+.sidebarnews h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin:10px 0 30px;
+}
+.sidebarnews a{
+    display:block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+.sidebarnews span{
+    font-size: 12px;
+
+}
+.sidebarnews .readmore{
+    color:blue;
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.sidebarad{
+    background: white;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+
+}
+.sidebarad img{
+    border-radius: 50%;
+    margin:4px;
+}
+.sidebarad small{
+    float: right;
+    font-weight: 500;
+}
+.sidebarad p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.sidebarad b{
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.adlink{
+    display: inline-block;
+    color:blue;
+    
+}
+.sideuselinks{
+    padding: 15px 25px;
+    text-align: center;
+}
+.sideuselink a{
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 20px;
+}
+.copyright msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+
+}
+.copyright img{
+    width:40px;
+    margin-right: 4px;
+}
+/* ----------------------------------------------------------right sidebar ends----------------------------- */
+.maincontent{
+    flex-basis:47%;
+}
+.create-post{
+    background: white;
+}
+.postinput{
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+.postinput img{
+    width:35px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.postinput textarea{
+    width:500px;
+    border:0;
+    outline:0;
+    resize: none;
+    background: transparent;
+    margin-top: 8px;
+
+}
+ ::placeholder{
+   font-weight: 500;
+}
+.postlinks{
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-radius: 1px solid #ccc;
+    flex-basis: 25%;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.sortby{
+   display: flex;
+   align-items: center;
+   margin: 10px 0;
+}
+.sortby hr{
+    flex:1;
+    border: 0;
+}
+.post{ 
+    
+    background: white;
+    padding: 20px 25px 5px;
+    margin: 5px 0 15px;
+}
+.postauthor{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.postauthor img{
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+.postauthor h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+.postauthor small{
+    display: block;
+    margin-bottom: -2px;
+
+}
+.post p{
+    font-size: 14px;
+    margin-bottom: 15px;
+
+}
+.poststatus{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+/* ------------------------------------media query for small screen------------------------------------- */
+@media only screen and (max-width:600px){
+    .searchbox{
+        background: transparent;
+        width:auto;
+        padding: 0;
+    }
+    .searchbox input{
+        width:0;
+        padding: 0;
+    }
+    .navcenter ul li a span{
+        display: none;
+
+
+    }
+    .navcenter ul li a{
+        padding-right: 0;
+        margin: 5px;
+
+    }
+    .icon img{
+        width:30px;
+    }
+    .container{
+        padding: 15px 3%;
+    }
+    .rightcontent , .leftcontent{
+        flex-basis: 100%;
+        position: relative;
+        top:unset;
+
+    }
+    .maincontent{
+        flex-basis: 100%;
+    }
+    .poststatus div{
+        margin:2px 0;
+       
+
+    }
+}

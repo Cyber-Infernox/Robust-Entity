@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESSAGES</title>
+   
+   
+    <link rel="stylesheet" href="messaging.css">
+
+</head>
+<body>
+    <nav >
+        <div class="navbar">
+        <ul>
+         <li>
+           <a href="#"> <img src="message write.jpg" alt="" height="30" width="30">  <span>Messaging</span></a> <li>
+            </li>
+        </ul>
+      
+        </div>
+
+        
+    </nav>
+    <div class="container">
+        
+        <div class="message right">Kiara: Hey how are you</div>         
+        <div class="message left">sid: I'm fine. what about you. </div>
+        
+    </div>
+    <div class="send">
+        <form action="#" id="sendcontainer">
+            <input type="text" name="minput" id="minput">
+            <button class="btn" type="submit">send</button>
+        </form>
+    </div>
+    <script  src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script  src="client.js"></script>
+   
+</body>
+</html>
