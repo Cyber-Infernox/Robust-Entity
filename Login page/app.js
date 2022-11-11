@@ -8,15 +8,6 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 
-const dbURI =
-  "mongodb+srv://Hashtag1:Hash1@job-knots.4tgdiz1.mongodb.net/Login?retryWrites=true&w=majority";
-
-mongoose
-  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => app.listen(5000))
-  .then(() => console.log("Connected"))
-  .catch((err) => console.log(err));
-
 app.use(express.static("public"));
 
 const getAllUser = async (req, res, next) => {
