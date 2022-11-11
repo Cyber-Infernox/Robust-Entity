@@ -1,14 +1,11 @@
 body {
-
   background-image: linear-gradient(white, rgb(231, 237, 243));
   height: 100vh;
 }
 
 .navbar {
-
   text-align: center;
 }
-
 
 .navbar img {
   /* display: flex; */
@@ -17,8 +14,6 @@ body {
   border-radius: 4px;
   padding: 20px;
 }
-
-
 
 .navbar ul li a {
   display: flex;
@@ -33,7 +28,6 @@ body {
 .navbar ul li {
   display: inline-block;
   list-style: none;
-
 }
 
 a {
@@ -58,20 +52,16 @@ a {
   padding: 10px;
   margin: 17px 20px;
   border-radius: 10px;
-
 }
 
 .right {
   float: right;
   clear: both;
-
-
 }
 
 .left {
   float: left;
   clear: both;
-
 }
 
 #sendcontainer {
@@ -81,16 +71,14 @@ a {
 
   max-width: 985px;
   width: 100%;
-
 }
-#minput{
-  width:92%;
+#minput {
+  width: 92%;
   border-radius: 6px;
-  height:34px;
-
+  height: 34px;
 }
-.btn{
-  cursor:pointer;
+.btn {
+  cursor: pointer;
   border-radius: 6px;
   height: 35px;
 }
