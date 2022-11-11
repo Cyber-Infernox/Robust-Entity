@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="container">
+      <div class="box">
+        <div class="head">
+          <h1>Join JobKnots</h1>
+
+          <form action="/signup" method="POST">
+            <input
+              class="line"
+              id="line1"
+              type="text"
+              placeholder="Name"
+            /><br />
+            <input
+              class="line"
+              id="line2"
+              type="email"
+              placeholder="Email"
+            /><br />
+            <input
+              class="line"
+              id="line3"
+              type="password"
+              placeholder="Password(8+ characters)"
+            /><br />
+            <p class="line linep">
+              By clicking Agree & Join, you agree to the JobKnots User
+              Agreement, Privacy Policy, and Cookie Policy.
+            </p>
+            <br />
+            <input class="btn line" type="submit" value="Agree & Join" />
+          </form>
+
+          <div class="signin">
+            <span class="block"> Already on JobKnots? </span>
+            <span id="direct">
+              <a id="visit" href="LogIn">Sign in</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+
+    <script
+      src="https://kit.fontawesome.com/346bd1243a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
