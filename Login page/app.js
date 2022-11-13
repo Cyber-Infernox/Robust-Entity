@@ -8,6 +8,12 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 
+mongoose
+  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => app.listen(5000))
+  .then(() => console.log("Connected"))
+  .catch((err) => console.log(err));
+
 app.use(express.static("public"));
 
 const getAllUser = async (req, res, next) => {
